@@ -8,6 +8,9 @@ import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/features/map/presentation/bloc/map_bloc.dart';
 import 'package:ridenow_app/features/map/presentation/widgets/map_widget.dart';
+import 'package:ridenow_app/features/renew_driver/presentation/bloc/renew_driver_bloc.dart';
+import 'package:ridenow_app/features/renew_driver/presentation/widgets/renew_driver.dart';
+
 import 'package:ridenow_app/gen/assets.gen.dart';
 
 class MapDriverWidget extends StatefulWidget {
@@ -82,9 +85,7 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
                 setState(() {
                   _isRideModeOn = true;
                 });
-                context.read<MapBloc>().add(
-                  ToggleRideModeEvent(true),
-                ); // Gửi sự kiện đến BLoC
+                context.read<MapBloc>().add(ToggleRideModeEvent(true));
               },
               backgroundColor: AppColor.white,
             ),
@@ -123,7 +124,6 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
                   return CustomExtendDialog(
                     colorbg: AppColor.white,
                     iconPath: Assets.icons.danger,
-                    //iconColor: Colors.red,
                     title: 'Chưa gia hạn hoạt động!',
                     message: Column(
                       children: [
@@ -137,11 +137,21 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
                         ),
                       ],
                     ),
-
                     buttonText: 'Gia hạn hoạt động',
                     onPressed: () {
                       Navigator.of(context).pop();
-                      // // Gọi API hoặc navigate tiếp
+                      // Điều hướng đến RenewDriverScreen
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder:
+                              (context) => BlocProvider(
+                                create:
+                                    (context) =>
+                                        context.read<RenewDriverBloc>(),
+                                child: const RenewDriverScreen(),
+                              ),
+                        ),
+                      );
                     },
                   );
                 },

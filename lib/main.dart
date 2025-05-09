@@ -3,6 +3,7 @@ import 'package:ridenow_app/config/navigator/navigator.dart';
 import 'package:ridenow_app/core/di/injection.dart';
 
 void main() async {
+  //di.configureDependencies();
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
   runApp(const MyApp());
