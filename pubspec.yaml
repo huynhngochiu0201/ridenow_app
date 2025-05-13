@@ -15,7 +15,7 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^9.1.1
   flutter_svg: ^2.1.0
-  freezed_annotation: ^2.4.4  # Chỉ cần freezed_annotation trong dependencies
+  freezed_annotation: ^2.4.4  
   geolocator: ^14.0.0
   get_it: ^8.0.3
   google_maps_flutter: ^2.12.1
@@ -28,7 +28,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
-  freezed: ^2.4.7  # Chỉ cần freezed trong dev_dependencies
+  freezed: ^2.4.7  
   injectable_generator: ^2.7.0
 
 flutter:

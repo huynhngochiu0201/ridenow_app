@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:injectable/injectable.dart';
 import 'package:ridenow_app/features/renew_driver/domain/usecase/get_points.dart';
 import 'package:ridenow_app/features/renew_driver/domain/usecase/renew_package.dart';
 
@@ -8,13 +7,12 @@ part 'renew_driver_event.dart';
 part 'renew_driver_state.dart';
 part 'renew_driver_bloc.freezed.dart';
 
-@injectable
 class RenewDriverBloc extends Bloc<RenewDriverEvent, RenewDriverState> {
   final GetPoints getPoints;
   final RenewPackage renewPackage;
 
   RenewDriverBloc(this.getPoints, this.renewPackage)
-    : super(RenewDriverState.initial()) {
+    : super(RenewDriverState()) {
     on<FetchPointsEvent>(_onFetchPoints);
     on<SelectPackageEvent>(_onSelectPackage);
     on<ToggleAutoRenewEvent>(_onToggleAutoRenew);

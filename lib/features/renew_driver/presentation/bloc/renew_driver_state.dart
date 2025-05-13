@@ -10,6 +10,4 @@ class RenewDriverState with _$RenewDriverState {
     String? errorMessage,
     @Default(false) bool canRenew,
   }) = _RenewDriverState;
-
-  factory RenewDriverState.initial() => const RenewDriverState();
 }

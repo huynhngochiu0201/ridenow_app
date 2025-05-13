@@ -13,7 +13,7 @@ class MapBloc extends Bloc<MapEvent, MapState> {
   MapBloc({
     required this.getCurrentLocationUsecase,
     required this.getLocationHistoryUseCase,
-  }) : super(MapState.initial()) {
+  }) : super(MapState()) {
     on<InitialEvent>(_onInit);
     on<ToggleRideModeEvent>(_onToggleRideMode);
     on<ShowExtendDialogEvent>(_onShowExtendDialog);

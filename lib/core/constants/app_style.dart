@@ -123,6 +123,13 @@ class AppStyle {
     color: AppColor.black,
   );
 
+  static TextStyle italic12red = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 12,
+    height: 1.5,
+    letterSpacing: 0,
+    color: AppColor.accentAlert,
+  );
   static TextStyle regular15 = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 15,

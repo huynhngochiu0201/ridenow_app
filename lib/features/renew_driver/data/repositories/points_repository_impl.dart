@@ -1,7 +1,9 @@
+import 'package:injectable/injectable.dart';
 import 'package:ridenow_app/features/renew_driver/data/datasources/points_local_datasource.dart';
 import 'package:ridenow_app/features/renew_driver/domain/entities/points_entity.dart';
 import 'package:ridenow_app/features/renew_driver/domain/repositories/points_repository.dart';
 
+@Singleton(as: PointsRepository)
 class PointsRepositoryImpl implements PointsRepository {
   final PointsLocalDataSource dataSource;
 

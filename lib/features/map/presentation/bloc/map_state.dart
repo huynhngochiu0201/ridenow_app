@@ -10,6 +10,4 @@ abstract class MapState with _$MapState {
     
     String? error,
   }) = _MapState;
-
-  factory MapState.initial() => const MapState();
 }

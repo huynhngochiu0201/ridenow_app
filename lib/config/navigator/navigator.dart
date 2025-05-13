@@ -3,6 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:ridenow_app/features/main_page_partners/main_page_partners.dart';
 import 'package:ridenow_app/features/map/presentation/screens/map_screen.dart';
+import 'package:ridenow_app/features/renew_driver/presentation/screens/renwe_driver_screen.dart';
 
 part 'screen_type.dart';
 part 'navigation_type.dart';

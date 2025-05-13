@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ridenow_app/config/navigator/navigator.dart';
 import 'package:ridenow_app/core/components/appbar/custom_app_bar_gradient.dart';
 import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
 import 'package:ridenow_app/core/components/dialog/custom_app_dialog.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
+import 'package:ridenow_app/core/extension/build_context_extension.dart';
 import 'package:ridenow_app/features/map/presentation/bloc/map_bloc.dart';
 import 'package:ridenow_app/features/map/presentation/widgets/map_widget.dart';
 import 'package:ridenow_app/features/renew_driver/presentation/bloc/renew_driver_bloc.dart';
@@ -141,16 +143,9 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
                     onPressed: () {
                       Navigator.of(context).pop();
                       // Điều hướng đến RenewDriverScreen
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder:
-                              (context) => BlocProvider(
-                                create:
-                                    (context) =>
-                                        context.read<RenewDriverBloc>(),
-                                child: const RenewDriverScreen(),
-                              ),
-                        ),
+
+                      context.getNavigator().push(
+                        screen: ScreenType.renewDriver(),
                       );
                     },
                   );

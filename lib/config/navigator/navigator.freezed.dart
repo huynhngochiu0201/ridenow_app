@@ -21,32 +21,38 @@ mixin _$ScreenType {
   TResult when<TResult extends Object?>({
     required TResult Function() home,
     required TResult Function(MapRole role) map,
+    required TResult Function() renewDriver,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
     TResult? Function(MapRole role)? map,
+    TResult? Function()? renewDriver,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function(MapRole role)? map,
+    TResult Function()? renewDriver,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(ScreenTypeHome value) home,
     required TResult Function(ScreenTypeMap value) map,
+    required TResult Function(ScreenRenewDriver value) renewDriver,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(ScreenTypeHome value)? home,
     TResult? Function(ScreenTypeMap value)? map,
+    TResult? Function(ScreenRenewDriver value)? renewDriver,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ScreenTypeHome value)? home,
     TResult Function(ScreenTypeMap value)? map,
+    TResult Function(ScreenRenewDriver value)? renewDriver,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
 }
@@ -118,6 +124,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult when<TResult extends Object?>({
     required TResult Function() home,
     required TResult Function(MapRole role) map,
+    required TResult Function() renewDriver,
   }) {
     return home();
   }
@@ -127,6 +134,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
     TResult? Function(MapRole role)? map,
+    TResult? Function()? renewDriver,
   }) {
     return home?.call();
   }
@@ -136,6 +144,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function(MapRole role)? map,
+    TResult Function()? renewDriver,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -149,6 +158,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult map<TResult extends Object?>({
     required TResult Function(ScreenTypeHome value) home,
     required TResult Function(ScreenTypeMap value) map,
+    required TResult Function(ScreenRenewDriver value) renewDriver,
   }) {
     return home(this);
   }
@@ -158,6 +168,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(ScreenTypeHome value)? home,
     TResult? Function(ScreenTypeMap value)? map,
+    TResult? Function(ScreenRenewDriver value)? renewDriver,
   }) {
     return home?.call(this);
   }
@@ -167,6 +178,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ScreenTypeHome value)? home,
     TResult Function(ScreenTypeMap value)? map,
+    TResult Function(ScreenRenewDriver value)? renewDriver,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -252,6 +264,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult when<TResult extends Object?>({
     required TResult Function() home,
     required TResult Function(MapRole role) map,
+    required TResult Function() renewDriver,
   }) {
     return map(role);
   }
@@ -261,6 +274,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
     TResult? Function(MapRole role)? map,
+    TResult? Function()? renewDriver,
   }) {
     return map?.call(role);
   }
@@ -270,6 +284,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function(MapRole role)? map,
+    TResult Function()? renewDriver,
     required TResult orElse(),
   }) {
     if (map != null) {
@@ -283,6 +298,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult map<TResult extends Object?>({
     required TResult Function(ScreenTypeHome value) home,
     required TResult Function(ScreenTypeMap value) map,
+    required TResult Function(ScreenRenewDriver value) renewDriver,
   }) {
     return map(this);
   }
@@ -292,6 +308,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(ScreenTypeHome value)? home,
     TResult? Function(ScreenTypeMap value)? map,
+    TResult? Function(ScreenRenewDriver value)? renewDriver,
   }) {
     return map?.call(this);
   }
@@ -301,6 +318,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ScreenTypeHome value)? home,
     TResult Function(ScreenTypeMap value)? map,
+    TResult Function(ScreenRenewDriver value)? renewDriver,
     required TResult orElse(),
   }) {
     if (map != null) {
@@ -320,6 +338,119 @@ abstract class ScreenTypeMap implements ScreenType {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ScreenTypeMapImplCopyWith<_$ScreenTypeMapImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ScreenRenewDriverImplCopyWith<$Res> {
+  factory _$$ScreenRenewDriverImplCopyWith(
+    _$ScreenRenewDriverImpl value,
+    $Res Function(_$ScreenRenewDriverImpl) then,
+  ) = __$$ScreenRenewDriverImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ScreenRenewDriverImplCopyWithImpl<$Res>
+    extends _$ScreenTypeCopyWithImpl<$Res, _$ScreenRenewDriverImpl>
+    implements _$$ScreenRenewDriverImplCopyWith<$Res> {
+  __$$ScreenRenewDriverImplCopyWithImpl(
+    _$ScreenRenewDriverImpl _value,
+    $Res Function(_$ScreenRenewDriverImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ScreenType
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
+  _$ScreenRenewDriverImpl();
+
+  @override
+  String toString() {
+    return 'ScreenType.renewDriver()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ScreenRenewDriverImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() home,
+    required TResult Function(MapRole role) map,
+    required TResult Function() renewDriver,
+  }) {
+    return renewDriver();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? home,
+    TResult? Function(MapRole role)? map,
+    TResult? Function()? renewDriver,
+  }) {
+    return renewDriver?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function(MapRole role)? map,
+    TResult Function()? renewDriver,
+    required TResult orElse(),
+  }) {
+    if (renewDriver != null) {
+      return renewDriver();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ScreenTypeHome value) home,
+    required TResult Function(ScreenTypeMap value) map,
+    required TResult Function(ScreenRenewDriver value) renewDriver,
+  }) {
+    return renewDriver(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ScreenTypeHome value)? home,
+    TResult? Function(ScreenTypeMap value)? map,
+    TResult? Function(ScreenRenewDriver value)? renewDriver,
+  }) {
+    return renewDriver?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ScreenTypeHome value)? home,
+    TResult Function(ScreenTypeMap value)? map,
+    TResult Function(ScreenRenewDriver value)? renewDriver,
+    required TResult orElse(),
+  }) {
+    if (renewDriver != null) {
+      return renewDriver(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ScreenRenewDriver implements ScreenType {
+  factory ScreenRenewDriver() = _$ScreenRenewDriverImpl;
 }
 
 /// @nodoc

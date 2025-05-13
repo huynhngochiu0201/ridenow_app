@@ -9,14 +9,14 @@ import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/features/renew_driver/presentation/bloc/renew_driver_bloc.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
 
-class RenewDriverScreen extends StatefulWidget {
-  const RenewDriverScreen({super.key});
+class RenewDriverWidget extends StatefulWidget {
+  const RenewDriverWidget({super.key});
 
   @override
-  State<RenewDriverScreen> createState() => _RenewDriverScreenState();
+  State<RenewDriverWidget> createState() => _RenewDriverWidgetState();
 }
 
-class _RenewDriverScreenState extends State<RenewDriverScreen> {
+class _RenewDriverWidgetState extends State<RenewDriverWidget> {
   @override
   void initState() {
     super.initState();
@@ -25,11 +25,16 @@ class _RenewDriverScreenState extends State<RenewDriverScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<RenewDriverBloc, RenewDriverState>(
-      builder: (context, state) {
-        return Scaffold(
-          backgroundColor: AppColor.white,
-          body: SafeArea(
+    return Scaffold(
+      backgroundColor: AppColor.white,
+      body: BlocConsumer<RenewDriverBloc, RenewDriverState>(
+        listener: (context, state) {
+          if (state.isLoading) {
+          } else {}
+        },
+
+        builder: (context, state) {
+          return SafeArea(
             child: Column(
               children: [
                 Expanded(
@@ -102,33 +107,18 @@ class _RenewDriverScreenState extends State<RenewDriverScreen> {
                               Expanded(
                                 child: Text(
                                   state.errorMessage!,
-                                  style: AppStyle.italic12,
+                                  style: AppStyle.italic12red,
                                 ),
                               ),
                             ],
                           ),
-                        const SizedBox(height: 16.0),
-                        // Row(
-                        //   children: [
-                        //     Checkbox(
-                        //       value: state.isAutoRenewEnabled,
-                        //       onChanged: (bool? value) {
-                        //         if (value != null) {
-                        //           context.read<RenewDriverBloc>().add(
-                        //             ToggleAutoRenewEvent(value),
-                        //           );
-                        //         }
-                        //       },
-                        //     ),
-                        //     const Text('Cho phép tự động gia hạn hoạt động'),
-                        //   ],
-                        // ),
                       ],
                     ),
                   ),
                 ),
+
                 Container(
-                  height: 120.0,
+                  height: 152.0,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: AppColor.white,
@@ -144,28 +134,63 @@ class _RenewDriverScreenState extends State<RenewDriverScreen> {
                   child: Padding(
                     padding: const EdgeInsets.only(
                       top: 16.0,
-                      bottom: 40,
+                      // bottom: 40,
                       left: 16.0,
                       right: 16.0,
                     ),
-                    child: CustomButton(
-                      text: 'Gia hạn hoạt động',
-                      onPressed:
-                          state.canRenew && !state.isLoading
-                              ? () {
-                                context.read<RenewDriverBloc>().add(
-                                  RenewPackageEvent(),
-                                );
-                              }
-                              : null,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Checkbox(
+                              fillColor: WidgetStateProperty.resolveWith<
+                                Color
+                              >((Set<WidgetState> states) {
+                                if (states.contains(WidgetState.selected)) {
+                                  return AppColor
+                                      .primary; // Màu khi checkbox được tích
+                                }
+                                return Colors
+                                    .transparent; // Màu khi checkbox không được tích
+                              }),
+
+                              checkColor: AppColor.white,
+                              value: state.isAutoRenewEnabled,
+                              onChanged: (bool? value) {
+                                if (value != null) {
+                                  context.read<RenewDriverBloc>().add(
+                                    ToggleAutoRenewEvent(value),
+                                  );
+                                }
+                              },
+                            ),
+                            const Text(
+                              'Cho phép tự động gia hạn hoạt động',
+                              style: AppStyle.body12RegularPrimary,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 16.0),
+                        CustomButton(
+                          text: 'Gia hạn hoạt động',
+                          onPressed:
+                              state.canRenew && !state.isLoading
+                                  ? () {
+                                    context.read<RenewDriverBloc>().add(
+                                      RenewPackageEvent(),
+                                    );
+                                  }
+                                  : null,
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ],
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }

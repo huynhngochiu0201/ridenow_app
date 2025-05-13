@@ -4,6 +4,7 @@ part of 'navigator.dart';
 class ScreenType with _$ScreenType {
   factory ScreenType.home() = ScreenTypeHome;
   factory ScreenType.map(MapRole role) = ScreenTypeMap;
+  factory ScreenType.renewDriver() = ScreenRenewDriver;
 }
 
 class ScreenTypeHelper {
@@ -11,6 +12,7 @@ class ScreenTypeHelper {
     return switch (screenType) {
       ScreenTypeHome() => const MainPagePartners(),
       ScreenTypeMap(role: final role) => MapScreen(role: role),
+      ScreenRenewDriver() => RenweDriverScreen(),
       _ => const SizedBox(),
     };
   }
