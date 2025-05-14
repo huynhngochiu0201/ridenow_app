@@ -10,9 +10,6 @@ import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/core/extension/build_context_extension.dart';
 import 'package:ridenow_app/features/map/presentation/bloc/map_bloc.dart';
 import 'package:ridenow_app/features/map/presentation/widgets/map_widget.dart';
-import 'package:ridenow_app/features/renew_driver/presentation/bloc/renew_driver_bloc.dart';
-import 'package:ridenow_app/features/renew_driver/presentation/widgets/renew_driver.dart';
-
 import 'package:ridenow_app/gen/assets.gen.dart';
 
 class MapDriverWidget extends StatefulWidget {

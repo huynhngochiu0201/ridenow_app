@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ridenow_app/config/navigator/navigator.dart';
 import 'package:ridenow_app/core/components/appbar/custom_app_bar.dart';
 import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
 import 'package:ridenow_app/core/components/button/custom_radio_button.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
+import 'package:ridenow_app/core/extension/build_context_extension.dart';
 import 'package:ridenow_app/features/renew_driver/presentation/bloc/renew_driver_bloc.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
 
@@ -170,14 +172,14 @@ class _RenewDriverWidgetState extends State<RenewDriverWidget> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 16.0),
+                        // SizedBox(height: 16.0),
                         CustomButton(
                           text: 'Gia hạn hoạt động',
                           onPressed:
                               state.canRenew && !state.isLoading
                                   ? () {
-                                    context.read<RenewDriverBloc>().add(
-                                      RenewPackageEvent(),
+                                    context.getNavigator().push(
+                                      screen: ScreenType.renewSuccess(),
                                     );
                                   }
                                   : null,

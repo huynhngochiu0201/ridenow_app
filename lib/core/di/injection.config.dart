@@ -23,14 +23,20 @@ import 'package:ridenow_app/features/map/domain/usecase/get_location_history_use
     as _i83;
 import 'package:ridenow_app/features/renew_driver/data/datasources/points_local_datasource.dart'
     as _i877;
-import 'package:ridenow_app/features/renew_driver/data/repositories/points_repository_impl.dart'
-    as _i433;
+import 'package:ridenow_app/features/renew_driver/data/datasources/points_local_datasource.dart';
+import 'package:ridenow_app/features/renew_driver/data/repositories/points_repository_impl.dart';
 import 'package:ridenow_app/features/renew_driver/domain/repositories/points_repository.dart'
     as _i934;
 import 'package:ridenow_app/features/renew_driver/domain/usecase/get_points.dart'
     as _i856;
 import 'package:ridenow_app/features/renew_driver/domain/usecase/renew_package.dart'
     as _i522;
+import 'package:ridenow_app/features/renewd_success/data/repositories/renewd_success_repo.dart'
+    as _i745;
+import 'package:ridenow_app/features/renewd_success/domain/repositories/i_renewd_success_repo.dart'
+    as _i142;
+import 'package:ridenow_app/features/renewd_success/domain/usecase/load_package_usecase.dart'
+    as _i751;
 
 extension GetItInjectableX on _i174.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -44,11 +50,15 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.singleton<_i167.MapDataSources>(() => _i167.MapDataSources());
     gh.singleton<_i713.GetLocationUsecase>(() => _i713.GetLocationUsecase());
-    gh.singleton<_i934.PointsRepository>(
-      () => _i433.PointsRepositoryImpl(gh<_i877.PointsLocalDataSource>()),
+    gh.singleton<_i142.IRenewdSuccessRepo>(() => _i745.Repository());
+    gh.singleton<_i751.LoadPackageUsecase>(
+      () => _i751.LoadPackageUsecase(gh<_i142.IRenewdSuccessRepo>()),
     );
     gh.singleton<_i884.IMapRepo>(
       () => _i427.MapRepo(gh<_i167.MapDataSources>()),
+    );
+    gh.singleton<_i934.PointsRepository>(
+      () => PointsRepositoryImpl(gh<PointsLocalDataSource>()),
     );
     gh.singleton<_i522.RenewPackage>(
       () => _i522.RenewPackage(gh<_i934.PointsRepository>()),

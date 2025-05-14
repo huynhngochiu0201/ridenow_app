@@ -5,3 +5,4 @@ class HomePartnersEvent with _$HomePartnersEvent {
   const factory HomePartnersEvent.initial() = InitialEvent;
   const factory HomePartnersEvent.openMap() = OpenMapEvent;
 }
+
