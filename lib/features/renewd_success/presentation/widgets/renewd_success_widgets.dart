@@ -6,7 +6,6 @@ import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/core/extension/build_context_extension.dart';
-import 'package:ridenow_app/features/map/presentation/widgets/map_driver_widget.dart';
 import 'package:ridenow_app/features/renewd_success/presentation/bloc/renewd_success_bloc.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
 
@@ -111,7 +110,7 @@ class _RenewdSuccesSwidgetsState extends State<RenewdSuccesSwidgets> {
               child: Column(
                 children: [
                   // SizedBox(height: 16.0),
-                  CustomButton(
+                  CustomButton1(
                     text: 'Trở về Trang chủ',
                     onPressed: () {
                       context.getNavigator().push(screen: ScreenType.home());

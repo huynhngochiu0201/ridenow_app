@@ -23,7 +23,6 @@ import 'package:ridenow_app/features/map/domain/usecase/get_location_history_use
     as _i83;
 import 'package:ridenow_app/features/renew_driver/data/datasources/points_local_datasource.dart'
     as _i877;
-import 'package:ridenow_app/features/renew_driver/data/datasources/points_local_datasource.dart';
 import 'package:ridenow_app/features/renew_driver/data/repositories/points_repository_impl.dart';
 import 'package:ridenow_app/features/renew_driver/domain/repositories/points_repository.dart'
     as _i934;
@@ -58,7 +57,7 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i427.MapRepo(gh<_i167.MapDataSources>()),
     );
     gh.singleton<_i934.PointsRepository>(
-      () => PointsRepositoryImpl(gh<PointsLocalDataSource>()),
+      () => PointsRepositoryImpl(gh<_i877.PointsLocalDataSource>()),
     );
     gh.singleton<_i522.RenewPackage>(
       () => _i522.RenewPackage(gh<_i934.PointsRepository>()),

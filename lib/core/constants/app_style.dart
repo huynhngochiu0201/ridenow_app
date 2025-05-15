@@ -14,6 +14,22 @@ import 'package:ridenow_app/core/constants/app_color.dart';
 class AppStyle {
   AppStyle._();
 
+  static TextStyle large18medium = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 18,
+    height: 1.3,
+    letterSpacing: 0,
+    color: AppColor.white,
+  );
+
+  static TextStyle heavy = TextStyle(
+    fontWeight: FontWeight.w900,
+    fontSize: 48,
+    height: 1.5,
+    letterSpacing: 0,
+    color: AppColor.white,
+  );
+
   static TextStyle heading20BoldWhite = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 20,

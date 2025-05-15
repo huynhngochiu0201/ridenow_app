@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class CustomButton1 extends StatelessWidget {
+  const CustomButton1({
     super.key,
     this.onPressed,
     required this.text,

@@ -169,6 +169,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/location_pick.svg
   String get locationPick => 'assets/icons/location_pick.svg';
 
+  /// File path: assets/icons/logo 1.svg
+  String get logo1 => 'assets/icons/logo 1.svg';
+
   /// File path: assets/icons/map_ic.svg
   String get mapIc => 'assets/icons/map_ic.svg';
 
@@ -237,6 +240,7 @@ class $AssetsIconsGen {
     lineIc,
     locationIc,
     locationPick,
+    logo1,
     mapIc,
     mdiCarConnected,
     mdiLocationPath,
@@ -254,11 +258,22 @@ class $AssetsIconsGen {
   ];
 }
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/logo 1.png
+  AssetGenImage get logo1 => const AssetGenImage('assets/images/logo 1.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [logo1];
+}
+
 class Assets {
   const Assets._();
 
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {

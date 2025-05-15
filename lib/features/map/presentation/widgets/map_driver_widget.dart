@@ -75,7 +75,7 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
               ],
             ),
             SizedBox(height: 16.0),
-            CustomButton(
+            CustomButton1(
               icon: SvgPicture.asset(Assets.icons.nutOff),
               height: 56.0,
               text: 'Bật Nhận cuốc',
@@ -111,7 +111,7 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
             },
             child: SvgPicture.asset(Assets.icons.frame84),
           ),
-          CustomButton(
+          CustomButton1(
             width: 190.0,
             height: 56.0,
             text: 'Gia hạn hoạt động',
