@@ -13,7 +13,7 @@ class ScreenType with _$ScreenType {
 class ScreenTypeHelper {
   static Widget page(ScreenType screenType) {
     return switch (screenType) {
-      ScreenOnBarding() => const OnboardingPage(),
+      ScreenOnBarding() => const WelcomeScreenPage(),
       ScreenTypeHome() => const MainPagePartners(),
       ScreenTypeMap(role: final role) => MapScreen(role: role),
       ScreenRenewDriver() => RenweDriverScreen(),

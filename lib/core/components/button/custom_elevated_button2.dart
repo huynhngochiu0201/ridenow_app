@@ -30,7 +30,7 @@ class CustomElevatedButton2 extends StatelessWidget {
     this.onPressed,
     this.height = 56.0,
     this.color = AppColor.primary,
-    this.borderColor = AppColor.white,
+    this.borderColor = AppColor.transparent,
     required this.text,
     this.textColor = AppColor.white,
     this.fontSize = 18.0,

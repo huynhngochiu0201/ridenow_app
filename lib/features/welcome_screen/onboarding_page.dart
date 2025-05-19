@@ -4,8 +4,8 @@ import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
 
-class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({super.key});
+class WelcomeScreenPage extends StatelessWidget {
+  const WelcomeScreenPage({super.key});
 
   @override
   Widget build(BuildContext context) {
