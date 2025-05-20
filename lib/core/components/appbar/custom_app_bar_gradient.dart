@@ -4,8 +4,9 @@ import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
 
-class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppbar({super.key, this.title});
+class CustomAppbarGradient extends StatelessWidget
+    implements PreferredSizeWidget {
+  const CustomAppbarGradient({super.key, this.title});
   final Widget? title;
 
   @override

@@ -31,7 +31,7 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbar(),
+      appBar: CustomAppbarGradient(),
       backgroundColor: Colors.red,
       body: Stack(
         children: [

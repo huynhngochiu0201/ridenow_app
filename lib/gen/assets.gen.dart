@@ -132,6 +132,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Profile.svg
   String get profile => 'assets/icons/Profile.svg';
 
+  /// File path: assets/icons/Radio-btn.svg
+  String get radioBtn => 'assets/icons/Radio-btn.svg';
+
   /// File path: assets/icons/Wallet.svg
   String get wallet => 'assets/icons/Wallet.svg';
 
@@ -159,6 +162,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/dot_ic.svg
   String get dotIc => 'assets/icons/dot_ic.svg';
+
+  /// File path: assets/icons/driver.svg
+  String get driver => 'assets/icons/driver.svg';
 
   /// File path: assets/icons/line_ic.svg
   String get lineIc => 'assets/icons/line_ic.svg';
@@ -207,6 +213,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/nut_off.svg
   String get nutOff => 'assets/icons/nut_off.svg';
 
+  /// File path: assets/icons/ph_radio-button-fill.svg
+  String get phRadioButtonFill => 'assets/icons/ph_radio-button-fill.svg';
+
   /// File path: assets/icons/profile_ic.svg
   String get profileIc => 'assets/icons/profile_ic.svg';
 
@@ -215,6 +224,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/radio_unselected.svg
   String get radioUnselected => 'assets/icons/radio_unselected.svg';
+
+  /// File path: assets/icons/receptionist.svg
+  String get receptionist => 'assets/icons/receptionist.svg';
 
   /// List of all assets
   List<dynamic> get values => [
@@ -228,6 +240,7 @@ class $AssetsIconsGen {
     locationBlack,
     locationRed,
     profile,
+    radioBtn,
     wallet,
     arrowDown,
     arrowLeftIc,
@@ -237,6 +250,7 @@ class $AssetsIconsGen {
     clockIc,
     discoveryIc,
     dotIc,
+    driver,
     lineIc,
     locationIc,
     locationPick,
@@ -252,9 +266,11 @@ class $AssetsIconsGen {
     navWalletIcSvg,
     nsvProfileIc,
     nutOff,
+    phRadioButtonFill,
     profileIc,
     radioSelected,
     radioUnselected,
+    receptionist,
   ];
 }
 

@@ -23,6 +23,7 @@ mixin _$ScreenType {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -31,6 +32,7 @@ mixin _$ScreenType {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -39,6 +41,7 @@ mixin _$ScreenType {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
@@ -48,6 +51,7 @@ mixin _$ScreenType {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,6 +60,7 @@ mixin _$ScreenType {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,6 +69,7 @@ mixin _$ScreenType {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
@@ -138,6 +144,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) {
     return home();
@@ -150,6 +157,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) {
     return home?.call();
@@ -162,6 +170,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) {
@@ -178,6 +187,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) {
     return home(this);
@@ -190,6 +200,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) {
     return home?.call(this);
@@ -202,6 +213,7 @@ class _$ScreenTypeHomeImpl implements ScreenTypeHome {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) {
@@ -290,6 +302,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) {
     return map(role);
@@ -302,6 +315,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) {
     return map?.call(role);
@@ -314,6 +328,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) {
@@ -330,6 +345,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) {
     return map(this);
@@ -342,6 +358,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) {
     return map?.call(this);
@@ -354,6 +371,7 @@ class _$ScreenTypeMapImpl implements ScreenTypeMap {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) {
@@ -423,6 +441,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) {
     return renewDriver();
@@ -435,6 +454,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) {
     return renewDriver?.call();
@@ -447,6 +467,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) {
@@ -463,6 +484,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) {
     return renewDriver(this);
@@ -475,6 +497,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) {
     return renewDriver?.call(this);
@@ -487,6 +510,7 @@ class _$ScreenRenewDriverImpl implements ScreenRenewDriver {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) {
@@ -548,6 +572,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) {
     return renewSuccess();
@@ -560,6 +585,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) {
     return renewSuccess?.call();
@@ -572,6 +598,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) {
@@ -588,6 +615,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) {
     return renewSuccess(this);
@@ -600,6 +628,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) {
     return renewSuccess?.call(this);
@@ -612,6 +641,7 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) {
@@ -624,6 +654,137 @@ class _$ScreenRenewSuccessImpl implements ScreenRenewSuccess {
 
 abstract class ScreenRenewSuccess implements ScreenType {
   factory ScreenRenewSuccess() = _$ScreenRenewSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$ScreenRegisterImplCopyWith<$Res> {
+  factory _$$ScreenRegisterImplCopyWith(
+    _$ScreenRegisterImpl value,
+    $Res Function(_$ScreenRegisterImpl) then,
+  ) = __$$ScreenRegisterImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ScreenRegisterImplCopyWithImpl<$Res>
+    extends _$ScreenTypeCopyWithImpl<$Res, _$ScreenRegisterImpl>
+    implements _$$ScreenRegisterImplCopyWith<$Res> {
+  __$$ScreenRegisterImplCopyWithImpl(
+    _$ScreenRegisterImpl _value,
+    $Res Function(_$ScreenRegisterImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of ScreenType
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ScreenRegisterImpl implements ScreenRegister {
+  _$ScreenRegisterImpl();
+
+  @override
+  String toString() {
+    return 'ScreenType.renewRegister()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ScreenRegisterImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() home,
+    required TResult Function(MapRole role) map,
+    required TResult Function() renewDriver,
+    required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
+    required TResult Function() onbarding,
+  }) {
+    return renewRegister();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? home,
+    TResult? Function(MapRole role)? map,
+    TResult? Function()? renewDriver,
+    TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
+    TResult? Function()? onbarding,
+  }) {
+    return renewRegister?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function(MapRole role)? map,
+    TResult Function()? renewDriver,
+    TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
+    TResult Function()? onbarding,
+    required TResult orElse(),
+  }) {
+    if (renewRegister != null) {
+      return renewRegister();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ScreenTypeHome value) home,
+    required TResult Function(ScreenTypeMap value) map,
+    required TResult Function(ScreenRenewDriver value) renewDriver,
+    required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
+    required TResult Function(ScreenOnBarding value) onbarding,
+  }) {
+    return renewRegister(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ScreenTypeHome value)? home,
+    TResult? Function(ScreenTypeMap value)? map,
+    TResult? Function(ScreenRenewDriver value)? renewDriver,
+    TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
+    TResult? Function(ScreenOnBarding value)? onbarding,
+  }) {
+    return renewRegister?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ScreenTypeHome value)? home,
+    TResult Function(ScreenTypeMap value)? map,
+    TResult Function(ScreenRenewDriver value)? renewDriver,
+    TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
+    TResult Function(ScreenOnBarding value)? onbarding,
+    required TResult orElse(),
+  }) {
+    if (renewRegister != null) {
+      return renewRegister(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ScreenRegister implements ScreenType {
+  factory ScreenRegister() = _$ScreenRegisterImpl;
 }
 
 /// @nodoc
@@ -673,6 +834,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     required TResult Function(MapRole role) map,
     required TResult Function() renewDriver,
     required TResult Function() renewSuccess,
+    required TResult Function() renewRegister,
     required TResult Function() onbarding,
   }) {
     return onbarding();
@@ -685,6 +847,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     TResult? Function(MapRole role)? map,
     TResult? Function()? renewDriver,
     TResult? Function()? renewSuccess,
+    TResult? Function()? renewRegister,
     TResult? Function()? onbarding,
   }) {
     return onbarding?.call();
@@ -697,6 +860,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     TResult Function(MapRole role)? map,
     TResult Function()? renewDriver,
     TResult Function()? renewSuccess,
+    TResult Function()? renewRegister,
     TResult Function()? onbarding,
     required TResult orElse(),
   }) {
@@ -713,6 +877,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     required TResult Function(ScreenTypeMap value) map,
     required TResult Function(ScreenRenewDriver value) renewDriver,
     required TResult Function(ScreenRenewSuccess value) renewSuccess,
+    required TResult Function(ScreenRegister value) renewRegister,
     required TResult Function(ScreenOnBarding value) onbarding,
   }) {
     return onbarding(this);
@@ -725,6 +890,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     TResult? Function(ScreenTypeMap value)? map,
     TResult? Function(ScreenRenewDriver value)? renewDriver,
     TResult? Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult? Function(ScreenRegister value)? renewRegister,
     TResult? Function(ScreenOnBarding value)? onbarding,
   }) {
     return onbarding?.call(this);
@@ -737,6 +903,7 @@ class _$ScreenOnBardingImpl implements ScreenOnBarding {
     TResult Function(ScreenTypeMap value)? map,
     TResult Function(ScreenRenewDriver value)? renewDriver,
     TResult Function(ScreenRenewSuccess value)? renewSuccess,
+    TResult Function(ScreenRegister value)? renewRegister,
     TResult Function(ScreenOnBarding value)? onbarding,
     required TResult orElse(),
   }) {
