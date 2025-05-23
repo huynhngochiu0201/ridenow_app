@@ -42,7 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
               child: Column(
                 children: [
-                  Text('Bạn là?'),
+                  Text('Bạn là?', style: AppStyle.heading18Semi),
                   SizedBox(height: 16.0),
                   _buildRoleOption(
                     svgpath: Assets.icons.receptionist,
@@ -79,21 +79,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
             ),
           ),
-          CustomButton1(
-            text: 'Tiếp tục',
-            onPressed: () {
-              if (selectedRole != null) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Đã chọn: $selectedRole')),
-                );
-                // Navigate to the next page (e.g., LoginPage)
-              } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Vui lòng chọn một vai trò!')),
-                );
-              }
-            },
-          ),
+          CustomElevatedButton(text: 'Tiếp tục', onPressed: () {}),
         ],
       ),
     );

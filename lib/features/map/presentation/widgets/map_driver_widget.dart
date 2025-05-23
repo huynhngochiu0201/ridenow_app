@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ridenow_app/config/navigator/navigator.dart';
-import 'package:ridenow_app/core/components/appbar/custom_app_bar_gradient.dart';
-import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
+import 'package:ridenow_app/core/components/appbar/custom_appbar.dart';
+import 'package:ridenow_app/core/components/button/custom_elevated_button1.dart';
 import 'package:ridenow_app/core/components/dialog/custom_app_dialog.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
@@ -31,7 +31,7 @@ class _MapDriverWidgetState extends State<MapDriverWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbarGradient(),
+      appBar: CustomAppbar(),
       backgroundColor: Colors.red,
       body: Stack(
         children: [

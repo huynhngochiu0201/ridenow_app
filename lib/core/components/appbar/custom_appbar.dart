@@ -36,7 +36,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '10:37', // Hiển thị thời gian hiện tại
+                    'Xin Chào Thông', // Hiển thị thời gian hiện tại
                     style: AppStyle.heading20BoldWhite,
                   ),
                   Text(

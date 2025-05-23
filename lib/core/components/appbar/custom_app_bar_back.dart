@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 
-class CustomAppBar1 extends StatelessWidget implements PreferredSizeWidget {
+class CustomAppBarBack extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final bool showBackButton;
   final List<Widget>? actions;
@@ -15,7 +15,7 @@ class CustomAppBar1 extends StatelessWidget implements PreferredSizeWidget {
   final Widget? backIcon;
   final VoidCallback? onBackPressed;
 
-  const CustomAppBar1({
+  const CustomAppBarBack({
     super.key,
     required this.title,
     this.showBackButton = true,

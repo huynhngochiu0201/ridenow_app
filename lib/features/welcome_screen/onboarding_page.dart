@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ridenow_app/core/components/button/custom_elevated_button2.dart';
+import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/gen/assets.gen.dart';
@@ -51,7 +51,7 @@ class WelcomeScreenPage extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     children: [
-                      CustomElevatedButton2(
+                      CustomElevatedButton(
                         color: AppColor.black,
                         text: 'Đăng nhập',
                         onPressed: () {
@@ -60,7 +60,7 @@ class WelcomeScreenPage extends StatelessWidget {
                         textColor: Colors.white,
                       ),
                       const SizedBox(height: 16.0),
-                      CustomElevatedButton2(
+                      CustomElevatedButton(
                         color: AppColor.white,
                         text: 'Đăng ký',
                         onPressed: () {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ridenow_app/config/navigator/navigator.dart';
-import 'package:ridenow_app/core/components/button/custom_elevated_button.dart';
+import 'package:ridenow_app/core/components/button/custom_elevated_button1.dart';
 import 'package:ridenow_app/core/constants/app_color.dart';
 import 'package:ridenow_app/core/constants/app_style.dart';
 import 'package:ridenow_app/core/extension/build_context_extension.dart';
